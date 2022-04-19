@@ -1,10 +1,13 @@
+@mixin field-padding-and-margin {
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+}
+
 $error-color: pink;
 
 .inputField {
+  @include field-padding-and-margin;
   outline: none;
-  height: 80%;
-  padding: 1rem 1rem;
-  margin: 0.5rem;
   &:hover {
     border: 2px solid gray;
   }
@@ -15,10 +18,8 @@ $error-color: pink;
 }
 
 .inputField-error {
+  @include field-padding-and-margin;
   outline: none;
-  padding: 1rem 1rem;
-  height: 90%;
-  margin: 0.5rem;
   background-color: $error-color;
   &:hover {
     border: 2px solid gray;
