@@ -1,81 +1,53 @@
 $error-color: pink;
 
 .inputField {
-    outline: none;
-    height: 80%;
-    padding: 1rem 1rem;
-    /* border: none; */
-    margin: 0.5rem;
-    &:hover {
-        // outline: none;
-        border: 2px solid gray;
-    }
-    &:focus, &:active {
-        // outline: none;
-        border: 2px solid black;
-    }
+  outline: none;
+  height: 80%;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+  &:hover {
+    border: 2px solid gray;
   }
-  
-  .inputField-error {
-    outline: none;
-    padding: 1rem 1rem;
-    height: 90%;
-    margin: 0.5rem;
-    background-color: $error-color;
-    &:hover {
-        // outline: none;
-        border: 2px solid gray;
-    }
-    &:focus, &:active {
-        // outline: none;
-        // outline: none;
-        border: 2px solid red;
-        background-color: white;
-    }
+  &:focus,
+  &:active {
+    border: 2px solid black;
   }
-  
-//   .inputField:hover {
-//     outline: none;
-//     border: 2px solid gray;
-//   }
-  
-//   .inputField:focus,
-//   .inputField:active {
-//     outline: none;
-//     border: 2px solid black;
-//   }
-  
-//   .inputField-error:hover {
-//     outline: none;
-//     border: 2px solid gray;
-//   }
-  
-//   .inputField-error:focus,
-//   .inputField-error:active {
-//     outline: none;
-//     border: 2px solid red;
-//     background-color: white;
-//   }
-  
-  .inputContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 40%;
-    /* margin-bottom: 5px; */
+}
+
+.inputField-error {
+  outline: none;
+  padding: 1rem 1rem;
+  height: 90%;
+  margin: 0.5rem;
+  background-color: $error-color;
+  &:hover {
+    border: 2px solid gray;
   }
-  
-  .inputContainer-error {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 40%;
-    /* margin-bottom: 5px; */
+  &:focus,
+  &:active {
+    border: 2px solid red;
+    background-color: white;
   }
-  
-  .inputContainer-error img, .inputContainer img {
-    height: 1rem;
-    position: relative;
-    right: 250px;
-    top: 1px;
-  }
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40%;
+}
+
+.inputContainer-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40%;
+}
+
+.inputContainer-error img,
+.inputContainer img {
+  height: 1rem;
+  position: relative;
+  right: 250px;
+  top: 1px;
+}
